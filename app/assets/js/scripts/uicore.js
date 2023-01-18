@@ -48,7 +48,7 @@ if(!isDev){
                 loggerAutoUpdater.info('New update available', info.version)
                 
                 if(process.platform === 'darwin'){
-                    info.darwindownload = `https://github.com/dscalzi/heliosLauncher/releases/download/v${info.version}/aetherium-Launcher-setup-${info.version}${process.arch === 'arm64' ? '-arm64' : '-x64'}.exe`
+                    info.darwindownload = `https://github.com/Pressynou/AetheriumLauncher/releases/download/v${info.version}/aetherium-Launcher-setup-${info.version}${process.arch === 'arm64' ? '-arm64' : '-x64'}.dmg`
                     showUpdateUI(info)
                 }
                 

@@ -2869,8 +2869,9 @@ input:checked + .toggleSwitchSlider:before {
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    margin-top: 50px;
+    margin-top: 0px;
 }
+
 
 /* Logo container styles w/ update. */
 #image_seal_container[update]{
