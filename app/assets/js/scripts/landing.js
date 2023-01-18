@@ -292,7 +292,7 @@ let extractListener
  */
 function asyncSystemScan(mcVersion, launchAfter = true){
 
-    setLaunchDetails('S\'il vous plaît, attendez..')
+    setLaunchDetails('Attendez..')
     toggleLaunchArea(true)
     setLaunchPercentage(0, 100)
 
