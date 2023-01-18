@@ -25,7 +25,7 @@ jobs:
           python-version: 3.x
 
       - name: Install Dependencies
-        run: npm ci
+        run: npm install git+https://github.com/Pressynou/Aetherium-core.git && npm ci
         shell: bash
 
       - name: Build
