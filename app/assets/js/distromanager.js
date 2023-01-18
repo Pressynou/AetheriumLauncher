@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const request = require('request')
-const { LoggerUtil } = require('negro-core')
+const { LoggerUtil } = require('aetherium-core')
 
 const ConfigManager = require('./configmanager')
 

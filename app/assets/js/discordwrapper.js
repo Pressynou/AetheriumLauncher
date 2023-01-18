@@ -1,5 +1,5 @@
 // Work in progress
-const { LoggerUtil } = require('negro-core')
+const { LoggerUtil } = require('aetherium-core')
 
 const logger = LoggerUtil.getLogger('DiscordWrapper')
 

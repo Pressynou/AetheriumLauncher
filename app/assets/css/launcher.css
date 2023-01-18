@@ -3376,7 +3376,7 @@ input:checked + .toggleSwitchSlider:before {
     font-weight: 900;
     letter-spacing: 2px;
     text-shadow: 0px 0px 0px #bebcbb;
-    font-size: 11px;
+    font-size: 20px;
     line-height: 30px;
     display: flex;
     transition: 0.25s ease;

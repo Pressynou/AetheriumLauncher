@@ -10,10 +10,10 @@
  */
 // Requirements
 const ConfigManager          = require('./configmanager')
-const { LoggerUtil }         = require('negro-core')
-const { RestResponseStatus } = require('negro-core/common')
-const { MojangRestAPI, mojangErrorDisplayable, MojangErrorCode } = require('negro-core/mojang')
-const { MicrosoftAuth, microsoftErrorDisplayable, MicrosoftErrorCode } = require('negro-core/microsoft')
+const { LoggerUtil }         = require('aetherium-core')
+const { RestResponseStatus } = require('aetherium-core/common')
+const { MojangRestAPI, mojangErrorDisplayable, MojangErrorCode } = require('aetherium-core/mojang')
+const { MicrosoftAuth, microsoftErrorDisplayable, MicrosoftErrorCode } = require('aetherium-core/microsoft')
 const { AZURE_CLIENT_ID }    = require('./ipcconstants')
 
 const log = LoggerUtil.getLogger('AuthManager')

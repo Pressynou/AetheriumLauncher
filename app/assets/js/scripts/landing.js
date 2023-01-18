@@ -5,13 +5,13 @@
 const cp                      = require('child_process')
 const crypto                  = require('crypto')
 const { URL }                 = require('url')
-const { MojangRestAPI, getServerStatus }     = require('negro-core/mojang')
+const { MojangRestAPI, getServerStatus }     = require('aetherium-core/mojang')
 
 // Internal Requirements
 const DiscordWrapper          = require('./assets/js/discordwrapper')
 const ProcessBuilder          = require('./assets/js/processbuilder')
 const { Util } = require('./assets/js/assetguard')
-const { RestResponseStatus, isDisplayableError } = require('negro-core/common')
+const { RestResponseStatus, isDisplayableError } = require('aetherium-core/common')
 const { stdout } = require('process')
 
 // Launch Elements
@@ -225,14 +225,14 @@ const refreshServerStatus = async function(fade = false){
     const serv = DistroManager.getDistribution().getServer(ConfigManager.getSelectedServer())
 
     let pLabel = 'SERVER'
-    let pVal = 'OFFLINE'
+    let pVal = 'HORS LIGNE'
 
     try {
         const serverURL = new URL('my://' + serv.getAddress())
 
         const servStat = await getServerStatus(47, serverURL.hostname, Number(serverURL.port))
         console.log(servStat)
-        pLabel = 'PLAYERS'
+        pLabel = 'JOUERS'
         pVal = servStat.players.online + '/' + servStat.players.max
 
     } catch (err) {
@@ -328,7 +328,7 @@ function asyncSystemScan(mcVersion, launchAfter = true){
                 // Show this information to the user.
                 setOverlayContent(
                     'Aucune installation<br>Java compatible n\'a été trouvée',
-                    `Pour rejoindre ARAB, vous avez besoin d'une installation 64 bits de Java ${javaVer}. Souhaitez-vous que nous installions une copie ?`,
+                    `Pour rejoindre Aetherium, vous avez besoin d'une installation 64 bits de Java ${javaVer}. Souhaitez-vous que nous installions une copie ?`,
                     'Installer Java',
                     'Installer manuellement'
                 )
@@ -687,7 +687,7 @@ function dlAsync(login = true){
                     if(SERVER_JOINED_REGEX.test(data)){
                         DiscordWrapper.updateDetails('Exploration du Realm!')
                     } else if(GAME_JOINED_REGEX.test(data)){
-                        DiscordWrapper.updateDetails('Navigation vers ARAB!')
+                        DiscordWrapper.updateDetails('Navigation vers Aetherium!')
                     }
                 }
 

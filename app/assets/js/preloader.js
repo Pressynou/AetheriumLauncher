@@ -6,7 +6,7 @@ const path           = require('path')
 const ConfigManager  = require('./configmanager')
 const DistroManager  = require('./distromanager')
 const LangLoader     = require('./langloader')
-const { LoggerUtil } = require('negro-core')
+const { LoggerUtil } = require('aetherium-core')
 
 const logger = LoggerUtil.getLogger('Preloader')
 

@@ -6,7 +6,7 @@ if(target == null){
 }
 let tracker = new target(...(process.argv.splice(3)))
 
-const { LoggerUtil } = require('negro-core')
+const { LoggerUtil } = require('aetherium-core')
 const logger = LoggerUtil.getLogger('AssetExec')
 
 //const tracker = new AssetGuard(process.argv[2], process.argv[3])
