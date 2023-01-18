@@ -1,5 +1,5 @@
 {
-  "name": "helios-core",
+  "name": "aetherium-core",
   "version": "0.1.2",
   "description": "A library containing core mechanisms for Helios Launcher",
   "main": "dist/index.js",
@@ -20,10 +20,18 @@
   },
   "typesVersions": {
     "*": {
-      ".": ["./dist/index.d.ts"],
-      "common": ["./dist/common.d.ts"],
-      "microsoft": ["./dist/microsoft.d.ts"],
-      "mojang": ["./dist/mojang.d.ts"]
+      ".": [
+        "./dist/index.d.ts"
+      ],
+      "common": [
+        "./dist/common.d.ts"
+      ],
+      "microsoft": [
+        "./dist/microsoft.d.ts"
+      ],
+      "mojang": [
+        "./dist/mojang.d.ts"
+      ]
     }
   },
   "repository": {
@@ -71,5 +79,6 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "types": "./dist/index.d.ts"
 }
